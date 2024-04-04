@@ -1,8 +1,22 @@
-# Go Web App Skeleton
+# Eden
 
-Go Web App Skeleton is a boilerplate for building web applications in Golang. It is built using the Gin Gonic framework and PostgreSQL as the database. It also includes a Dockerfile for containerization. The project is structured in a way that it is easy to add new features and scale the application.
+Eden is an web application written in Go as backend and React + TypeScript + TailwindCSS as frontend. The main goal is to self-educate myself in a web development field, but also to create a high performance web application that can be used by anyone. 
 
-Feel free to fork the project and use it as a starting point for your next web application.
+Eden is a web application that allows users to get to their goals by creating a list of tasks that they need to do.
+
+## Frameworks used
+
+- GinGonic as HTTP Server
+- Goose as Database Migrations
+- GoDotEnv as .env file parser
+- TailwindCSS + TypeScript + React + Vite as Frontend Framework
+
+## Compatibility table
+
+|         | Desktop | Mobile | Tablets |
+|---------|:-------:|:--------------:|:----:|
+| Support |   ✅    |       ❌       |  ❌  |
+
 
 ## Technologies used
 
@@ -13,18 +27,12 @@ Feel free to fork the project and use it as a starting point for your next web a
 - [Golang CI Lint](https://github.com/golangci/golangci-lint) - Golang Linter
 - [GoSec](https://github.com/securego/gosec) - Golang Security Scan
 - [TailwindCSS](https://tailwindcss.com/docs/installation/play-cdn) - CSS Framework from the CDN
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
 
 ## Features
 
-- Status page at /status
-- PostgreSQL Connection
-- Security Headers + Host Header Injection Fix
-- Static files serving via public folder
-- HTML Templates
-- Container Compatible
-- Error Handling
-- Comprehensive Go Linting
-- Quick Code Verification Workflow via Github Actions
+- About Page [x]
+- Tasks - In Progress [ ]
 
 ## Folder structure
 
@@ -40,6 +48,7 @@ Feel free to fork the project and use it as a starting point for your next web a
 - `src/routes` - Routes for the web application, contain all the routes for the web application
 - `src/services` - External services that the web application uses (like database connections, redis etc)
 - `tests/` - GO Unit Tests for the web application
+- `ui/` - Frontend side of the web application
 
 ## Available Make Commands
 
