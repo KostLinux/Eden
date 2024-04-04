@@ -66,7 +66,8 @@ Eden is a web application that allows users to get to their goals by creating a 
 
 ## Available Paths
 
-- `/` - Home page
+- `/dashboard` - Main page
+- `/about` - About page
 - `/status` - Status page
 - `API_PATH/ping` - API check endpoint
 - `API_PATH/users` - Sample Users API endpoint
@@ -84,13 +85,13 @@ You can add new environment variables in the struct and configure the defaults i
 1. Clone the repository
 
 ```bash
-git clone git@github.com:KostLinux/example-go-web-app.git
+git clone git@github.com:KostLinux/Eden.git
 ```
 
 2. Change the directory
 
 ```bash
-cd example-go-web-app
+cd Eden
 ```
 
 3. Configure .env (optional)
@@ -102,12 +103,13 @@ cp .env.example .env && nano .env
 4. Run the application
 
 ```bash
-make run || go run main.go
+make run
+cd ui && npm run dev
 ```
 
 5. Visit the application in your browser
 
-Feel free to visit the application at localhost:8000 and move around available paths
+Feel free to visit the application at localhost:5167 and move around available paths
 
 ## Contribution
 

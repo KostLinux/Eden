@@ -6,3 +6,9 @@ updates:
       interval: "monthly"
     reviewers:
       - "KostLinux"
+  - package-ecosystem: "npm"
+    directory: "ui/"
+    schedule:
+      interval: "monthly"
+    reviewers:
+      - "KostLinux"
